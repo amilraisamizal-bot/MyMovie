@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie | My Wishlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-shell">
+    <div class="app-layout">
+        <aside class="sidebar">
+
+            <a href="index.html" class="brand"><span>📽️ MyMovie</span></a>
+            <p class="sidebar-heading">LIBRARY</p>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-item">⌕ Movie Research</a>
+                <a href="wishlist.html" class="nav-item active" aria-current="page">♡ My Wishlist</a>
+            </nav>
+
+            <p class="sidebar-heading">MOVIE GENRES</p>
+
+            <div class="genre-links">
+                <a class="genre-link" href="index.html?genre=Action">Action</a>
+                <a class="genre-link" href="index.html?genre=Comedy">Comedy</a>
+                <a class="genre-link" href="index.html?genre=Drama">Drama</a>
+                <a class="genre-link" href="index.html?genre=Horror">Horror</a>
+                <a class="genre-link" href="index.html?genre=Romance">Romance</a>
+                <a class="genre-link" href="index.html?genre=Sci-Fi">Sci-Fi</a>
+            </div>
+
+            <p class="sidebar-note">Explore new movies by genre.</p>
+
+            <div class="sidebar-footer">MyMovie · Desktop Edition</div>
+        </aside>
+
+        <div class="content-area">
+
+            <header class="topbar">
+                <div><p class="eyebrow">YOUR PERSONAL MOVIE LIBRARY</p><h1>My Wishlist</h1></div>
+                <a href="index.html" class="outline-link">Discover Movies</a>
+            </header>
+
+            <main class="main-content">
+                <section class="panel">
+                    <div class="section-heading">
+                        <div><p class="eyebrow">SAVED MOVIES</p><h2>My Wishlist</h2>
+                            <p>View your movies, update their watch status, add notes, or delete them.</p></div>
+                    </div>
+
+                    <div id="stats" class="stats"></div>
+                    <p id="message" class="feedback" role="status" aria-live="polite"></p>
+                    <div id="savedMovies" class="cards"></div>
+        
+                </section>
+
+                <section class="panel recommend-section">
+                    <h2>Saved Recommendations</h2>
+                    <p>Suggestions you've generated using Movie Genres on the Research page.</p>
+                    <div id="savedRecommendations" class="cards"></div>
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="movie.js"></script>
+
+
+</body>
+
+</html>
